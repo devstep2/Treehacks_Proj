@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="8Tc-xx-iC9">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
@@ -15,12 +15,11 @@
             <objects>
                 <viewController id="BYZ-38-t0r" userLabel="ARView" customClass="ViewController" customModule="test" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="kBf-Dh-J0G">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="783"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <arView multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5U0-vo-lm0">
-                                <rect key="frame" x="0.0" y="0.0" width="430" height="932"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <arView multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5U0-vo-lm0">
+                                <rect key="frame" x="0.0" y="0.0" width="393" height="783"/>
                             </arView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vIF-zE-mUM">
                                 <rect key="frame" x="160" y="773" width="106" height="71"/>
@@ -38,7 +37,14 @@
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="mKX-oV-dd4"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="5U0-vo-lm0" secondAttribute="trailing" id="Ged-yv-cRn"/>
+                            <constraint firstItem="5U0-vo-lm0" firstAttribute="leading" secondItem="mKX-oV-dd4" secondAttribute="leading" id="Wwh-fc-YMY"/>
+                            <constraint firstAttribute="bottom" secondItem="5U0-vo-lm0" secondAttribute="bottom" id="uet-Ay-PoE"/>
+                            <constraint firstItem="5U0-vo-lm0" firstAttribute="top" secondItem="kBf-Dh-J0G" secondAttribute="top" id="vbu-h6-Chp"/>
+                        </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="hRX-vo-8JV"/>
                     <connections>
                         <outlet property="arView" destination="5U0-vo-lm0" id="Kox-83-MYA"/>
                         <outlet property="capture_button" destination="vIF-zE-mUM" id="W8G-rk-Byg"/>
@@ -57,12 +63,12 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="npn-DD-wWy">
-                                <rect key="frame" x="143" y="167" width="106.66666666666666" height="42"/>
+                                <rect key="frame" x="143.33333333333334" y="167" width="106.66666666666666" height="42"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Naz" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c4I-g8-hWe">
                                         <rect key="frame" x="0.0" y="0.0" width="59" height="42"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="35"/>
-                                        <nil key="textColor"/>
+                                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="251" text="AR" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IDU-Yv-daf">
@@ -87,6 +93,9 @@
                                 </constraints>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Begin"/>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="showDetail" id="TXE-W0-zAd"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="NC7-Ag-vPf"/>

@@ -11,6 +11,10 @@
 		EF29AACA29A2299A0019A439 /* CameraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF29AAC929A2299A0019A439 /* CameraView.swift */; };
 		EF29AACC29A231860019A439 /* Red_Apple_Emoji.usdz in Resources */ = {isa = PBXBuildFile; fileRef = EF29AACB29A231860019A439 /* Red_Apple_Emoji.usdz */; };
 		EF29AACE29A23EC90019A439 /* InitialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF29AACD29A23EC90019A439 /* InitialViewController.swift */; };
+		EF29AAD029A269C50019A439 /* bobidle.usdz in Resources */ = {isa = PBXBuildFile; fileRef = EF29AACF29A269C50019A439 /* bobidle.usdz */; };
+		EF29AAD429A27B660019A439 /* hut.usdz in Resources */ = {isa = PBXBuildFile; fileRef = EF29AAD329A27B660019A439 /* hut.usdz */; };
+		EF29AAD729A27BBA0019A439 /* bobvictory.usdz in Resources */ = {isa = PBXBuildFile; fileRef = EF29AAD529A27BBA0019A439 /* bobvictory.usdz */; };
+		EF29AAD829A27BBA0019A439 /* sallywins.usdz in Resources */ = {isa = PBXBuildFile; fileRef = EF29AAD629A27BBA0019A439 /* sallywins.usdz */; };
 		EF62742829A0C63300094B5F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF62742729A0C63300094B5F /* AppDelegate.swift */; };
 		EF62742A29A0C63300094B5F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF62742929A0C63300094B5F /* ViewController.swift */; };
 		EF62742C29A0C63300094B5F /* Experience.rcproject in Sources */ = {isa = PBXBuildFile; fileRef = EF62742B29A0C63300094B5F /* Experience.rcproject */; };
@@ -44,6 +48,10 @@
 		EF29AAC929A2299A0019A439 /* CameraView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraView.swift; sourceTree = "<group>"; };
 		EF29AACB29A231860019A439 /* Red_Apple_Emoji.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; name = Red_Apple_Emoji.usdz; path = ../../../../Desktop/Red_Apple_Emoji.usdz; sourceTree = "<group>"; };
 		EF29AACD29A23EC90019A439 /* InitialViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InitialViewController.swift; sourceTree = "<group>"; };
+		EF29AACF29A269C50019A439 /* bobidle.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; name = bobidle.usdz; path = ../../../../Desktop/bobidle.usdz; sourceTree = "<group>"; };
+		EF29AAD329A27B660019A439 /* hut.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; name = hut.usdz; path = ../../../../Desktop/hut.usdz; sourceTree = "<group>"; };
+		EF29AAD529A27BBA0019A439 /* bobvictory.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; name = bobvictory.usdz; path = ../../../../Desktop/bobvictory.usdz; sourceTree = "<group>"; };
+		EF29AAD629A27BBA0019A439 /* sallywins.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; name = sallywins.usdz; path = ../../../../Desktop/sallywins.usdz; sourceTree = "<group>"; };
 		EF62742429A0C63300094B5F /* test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = test.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EF62742729A0C63300094B5F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EF62742929A0C63300094B5F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -113,7 +121,11 @@
 				EF62742B29A0C63300094B5F /* Experience.rcproject */,
 				EF62742D29A0C63300094B5F /* Main.storyboard */,
 				EF62743029A0C63400094B5F /* Assets.xcassets */,
+				EF29AAD329A27B660019A439 /* hut.usdz */,
+				EF29AAD529A27BBA0019A439 /* bobvictory.usdz */,
+				EF29AAD629A27BBA0019A439 /* sallywins.usdz */,
 				EF29AACB29A231860019A439 /* Red_Apple_Emoji.usdz */,
+				EF29AACF29A269C50019A439 /* bobidle.usdz */,
 				EF62743229A0C63400094B5F /* LaunchScreen.storyboard */,
 				EF29AACD29A23EC90019A439 /* InitialViewController.swift */,
 			);
@@ -241,10 +253,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EF29AAD829A27BBA0019A439 /* sallywins.usdz in Resources */,
+				EF29AAD029A269C50019A439 /* bobidle.usdz in Resources */,
 				EF62743429A0C63400094B5F /* LaunchScreen.storyboard in Resources */,
 				EF62743129A0C63400094B5F /* Assets.xcassets in Resources */,
 				EF62742F29A0C63300094B5F /* Main.storyboard in Resources */,
 				EF29AACC29A231860019A439 /* Red_Apple_Emoji.usdz in Resources */,
+				EF29AAD429A27B660019A439 /* hut.usdz in Resources */,
+				EF29AAD729A27BBA0019A439 /* bobvictory.usdz in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

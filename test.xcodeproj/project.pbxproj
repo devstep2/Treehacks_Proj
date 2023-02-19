@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EF29AAC829A220430019A439 /* HandGestureProcessor.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF29AAC729A220430019A439 /* HandGestureProcessor.swift */; };
+		EF29AACA29A2299A0019A439 /* CameraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF29AAC929A2299A0019A439 /* CameraView.swift */; };
 		EF62742829A0C63300094B5F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF62742729A0C63300094B5F /* AppDelegate.swift */; };
 		EF62742A29A0C63300094B5F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF62742929A0C63300094B5F /* ViewController.swift */; };
 		EF62742C29A0C63300094B5F /* Experience.rcproject in Sources */ = {isa = PBXBuildFile; fileRef = EF62742B29A0C63300094B5F /* Experience.rcproject */; };
@@ -36,6 +38,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		EF29AAC729A220430019A439 /* HandGestureProcessor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HandGestureProcessor.swift; sourceTree = "<group>"; };
+		EF29AAC929A2299A0019A439 /* CameraView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraView.swift; sourceTree = "<group>"; };
 		EF62742429A0C63300094B5F /* test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = test.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EF62742729A0C63300094B5F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EF62742929A0C63300094B5F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -99,7 +103,9 @@
 			isa = PBXGroup;
 			children = (
 				EF62742729A0C63300094B5F /* AppDelegate.swift */,
+				EF29AAC729A220430019A439 /* HandGestureProcessor.swift */,
 				EF62742929A0C63300094B5F /* ViewController.swift */,
+				EF29AAC929A2299A0019A439 /* CameraView.swift */,
 				EF62742B29A0C63300094B5F /* Experience.rcproject */,
 				EF62742D29A0C63300094B5F /* Main.storyboard */,
 				EF62743029A0C63400094B5F /* Assets.xcassets */,
@@ -259,6 +265,8 @@
 				EF62742A29A0C63300094B5F /* ViewController.swift in Sources */,
 				EF62742829A0C63300094B5F /* AppDelegate.swift in Sources */,
 				EF62742C29A0C63300094B5F /* Experience.rcproject in Sources */,
+				EF29AACA29A2299A0019A439 /* CameraView.swift in Sources */,
+				EF29AAC829A220430019A439 /* HandGestureProcessor.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

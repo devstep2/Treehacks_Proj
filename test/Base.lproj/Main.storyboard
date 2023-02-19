@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina6_72" orientation="portrait" appearance="light"/>
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
         <capability name="Image references" minToolsVersion="12.0"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -14,7 +15,7 @@
             <objects>
                 <viewController id="BYZ-38-t0r" userLabel="ARView" customClass="ViewController" customModule="test" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="kBf-Dh-J0G">
-                        <rect key="frame" x="0.0" y="0.0" width="430" height="932"/>
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <arView multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5U0-vo-lm0">
@@ -47,9 +48,74 @@
             </objects>
             <point key="canvasLocation" x="136.74418604651163" y="133.90557939914163"/>
         </scene>
+        <!--Initial View Controller-->
+        <scene sceneID="3Mj-Ye-Wg4">
+            <objects>
+                <viewController id="8Tc-xx-iC9" customClass="InitialViewController" customModule="test" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="vsY-79-jG4">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="npn-DD-wWy">
+                                <rect key="frame" x="143" y="167" width="106.66666666666666" height="42"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Naz" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c4I-g8-hWe">
+                                        <rect key="frame" x="0.0" y="0.0" width="59" height="42"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="35"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="251" text="AR" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IDU-Yv-daf">
+                                        <rect key="frame" x="59" y="0.0" width="47.666666666666657" height="42"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="35"/>
+                                        <color key="textColor" name="AccentColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="6651076" translatesAutoresizingMaskIntoConstraints="NO" id="NBi-QH-87Z">
+                                <rect key="frame" x="0.0" y="239" width="393" height="456"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="456" id="egT-M3-tnF"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PEF-ZM-UTH">
+                                <rect key="frame" x="107" y="692" width="179" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="edV-5J-Lli"/>
+                                    <constraint firstAttribute="width" constant="179" id="gVW-59-9pv"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Begin"/>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="NC7-Ag-vPf"/>
+                        <color key="backgroundColor" red="0.98039215686274506" green="0.97647058823529409" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="PEF-ZM-UTH" firstAttribute="centerX" secondItem="NBi-QH-87Z" secondAttribute="centerX" id="6Nv-Lx-49G"/>
+                            <constraint firstItem="NBi-QH-87Z" firstAttribute="top" secondItem="npn-DD-wWy" secondAttribute="bottom" constant="30" id="C3k-lS-tPD"/>
+                            <constraint firstItem="NC7-Ag-vPf" firstAttribute="bottom" secondItem="NBi-QH-87Z" secondAttribute="bottom" constant="123" id="H3t-UJ-e9R"/>
+                            <constraint firstItem="NC7-Ag-vPf" firstAttribute="bottom" secondItem="PEF-ZM-UTH" secondAttribute="bottom" constant="86" id="Lmk-5U-iPT"/>
+                            <constraint firstItem="PEF-ZM-UTH" firstAttribute="centerX" secondItem="vsY-79-jG4" secondAttribute="centerX" id="MWK-aF-xzW"/>
+                            <constraint firstItem="NBi-QH-87Z" firstAttribute="leading" secondItem="NC7-Ag-vPf" secondAttribute="leading" id="vau-FN-MYU"/>
+                            <constraint firstItem="PEF-ZM-UTH" firstAttribute="centerX" secondItem="npn-DD-wWy" secondAttribute="centerX" id="yuJ-DJ-ZvY"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="begin_button" destination="PEF-ZM-UTH" id="6ap-Pq-Mug"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vAB-WT-ndO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1026.7175572519084" y="133.80281690140845"/>
+        </scene>
     </scenes>
     <resources>
+        <image name="6651076" width="3000" height="2000"/>
         <image name="camera" catalog="system" width="128" height="93"/>
+        <namedColor name="AccentColor">
+            <color red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

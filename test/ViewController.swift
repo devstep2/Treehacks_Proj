@@ -10,6 +10,7 @@ import RealityKit
 import Vision
 import AVFoundation
 class ViewController: UIViewController {
+    
     var captured_image: UIImage = UIImage()
     @IBOutlet var arView: ARView!
     @IBOutlet weak var capture_button: UIButton!
@@ -22,18 +23,15 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         //Load the "Box" scene from the "Experience" Reality File
         //let boxAnchor = try! Experience.loadBox()
-        let box = create_box()
-        place_box(box: box, at: SIMD3(x: 0, y: 0, z: 0))
-        install_gestures(on: box)
+        
         //Add the box anchor to the scene
        // arView.scene.anchors.append(boxAnchor)
         //create button
     }
         func create_box() -> ModelEntity {
-            let box = MeshResource.generateBox(size: 0.5)
-            let box_material = SimpleMaterial(color: .blue, isMetallic: false)
-            let boxEntity = ModelEntity(mesh: box, materials: [box_material])
-            return boxEntity
+            let url = URL(fileURLWithPath: "path/to/MyEntity.usdz")
+            let appleEntity = try? ModelEntity.loadModel(named: "Red_Apple_Emoji")
+            return appleEntity!
         }
         func place_box(box: ModelEntity, at position: SIMD3<Float>){
             let box_anchor = AnchorEntity(world: position)
@@ -51,8 +49,24 @@ class ViewController: UIViewController {
         parse_image_to_text()
     }
     func processResults(str: [String]) {
-        var joined = str.joined(separator: ",")
-        print(joined)
+        //var joined = str.joined(separator: ",")
+        if str.contains("Apple") {
+            print(str)
+            for s in str {
+                for char in s {
+                    if char.isNumber {
+                        print("penis")
+                        for i in 0..<Int(String(char))! {
+                            let box = create_box()
+                            place_box(box: box, at: SIMD3(x: 0.5*(Float(i)), y: 0.5*(Float(i)), z: 0))
+                            install_gestures(on: box)
+                        }
+                        return
+                    }
+                }
+            }
+
+        }
     }
     func recognizeTextHandler(request: VNRequest, error: Error?) {
         guard let observations =
